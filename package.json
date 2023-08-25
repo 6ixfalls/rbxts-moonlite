@@ -8,10 +8,10 @@
     "watch": "rbxtsc -w",
     "prepublishOnly": "npm run build"
   },
-  "homepage": "",
+  "homepage": "https://github.com/Tesmi-Devlop/MoonlightTS#readme",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Tesmi-Devlop/MoonlightTS"
   },
   "keywords": [],
   "author": "Tesmi",
