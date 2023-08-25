@@ -72,14 +72,14 @@ export interface MoonTrack {
      * **Warning:** The result of this function depends on the order of elements in the authored sequence. If there are multiple elements with the same name, this may produce unexpected behavior.
      * @returns the first element in this track whose name matches the provided name, if one can be found. Otherwise returns `nil`.
      */
-    FindElement(name: string): Instance | void;
+    FindElement(name: string): Instance | undefined;
 
     /**
      * **Warning**: The result of this function depends on the order of elements in the authored sequence. If there are multiple elements that satisfy `element:IsA(typeName)`, this may produce unexpected behavior.
      * 
      * @returns the first element in this track which satisfies `element:IsA(typeName)`, or `nil` if no such element can be found.
      */
-    FindElementOfType<T extends keyof Instances>(typeName: string): this is Instances[T];
+    FindElementOfType<T extends keyof Instances>(typeName: T): Instances[T];
 
     /**
      * Attempts to replace an element by its defined absolute path with a specific Instance.
