@@ -79,7 +79,7 @@ export interface MoonTrack {
      * 
      * @returns the first element in this track which satisfies `element:IsA(typeName)`, or `nil` if no such element can be found.
      */
-    FindElementOfType<T extends keyof Instances>(typeName: T): Instances[T];
+    FindElementOfType<T extends keyof Instances>(typeName: T): Instances[T] | undefined;
 
     /**
      * Attempts to replace an element by its defined absolute path with a specific Instance.

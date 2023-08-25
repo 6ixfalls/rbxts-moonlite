@@ -1,6 +1,6 @@
 {
   "name": "@rbxts/moonlite",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Moonlite typings",
   "main": "out/init.lua",
   "scripts": {
