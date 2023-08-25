@@ -8,7 +8,7 @@
     "watch": "rbxtsc -w",
     "prepublishOnly": "npm run build"
   },
-  "homepage": "https://github.com/Tesmi-Devlop/MoonlightTS#readme",
+  "homepage": "https://github.com/MaximumADHD/Moonlite#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/Tesmi-Devlop/MoonlightTS"
