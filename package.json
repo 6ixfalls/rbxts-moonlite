@@ -2,7 +2,7 @@
   "name": "@rbxts/moonlite",
   "version": "1.0.4",
   "description": "Moonlite typings",
-  "main": "out/init.lua",
+  "main": "src/init.lua",
   "scripts": {
     "build": "rbxtsc",
     "watch": "rbxtsc -w",
@@ -16,9 +16,9 @@
   "keywords": [],
   "author": "6ixfalls",
   "license": "ISC",
-  "types": "out/index.d.ts",
+  "types": "src/index.d.ts",
   "files": [
-    "out",
+    "src",
     "!**/*.tsbuildinfo"
   ],
   "publishConfig": {
