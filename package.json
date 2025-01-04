@@ -11,10 +11,10 @@
   "homepage": "https://github.com/MaximumADHD/Moonlite#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Tesmi-Devlop/MoonlightTS"
+    "url": "https://github.com/6ixfalls/rbxts-moonlite"
   },
   "keywords": [],
-  "author": "Tesmi",
+  "author": "6ixfalls",
   "license": "ISC",
   "types": "out/index.d.ts",
   "files": [

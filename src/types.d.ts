@@ -10,6 +10,26 @@ export interface MoonTrack {
     readonly Completed: RBXScriptSignal,
 
     /**
+     * How many frames are in the animation.
+     */
+    readonly Frames: number,
+
+    /**
+     * The framerate of the animation.
+     */
+    readonly FrameRate: number,
+
+    /**
+     * The time position of the animation.
+     */
+    TimePosition: number,
+
+    /**
+     * Whether to restore the default property values at the end of the animation.
+     */
+    RestoreDefaults: boolean,
+
+    /**
      * Starts playing the track's elements.
      * 
      * **Note**: Has no effect if the track is already playing
@@ -90,4 +110,31 @@ export interface MoonTrack {
      * This function returns an [event](https://developer.roblox.com/en-us/api-reference/datatype/RBXScriptSignal).Fires when a specified [KeyframeMarker](https://developer.roblox.com/en-us/api-reference/class/KeyframeMarker) has been hit in an `MoonTrack`.
      */
     GetMarkerReachedSignal(name: string): RBXScriptSignal<(value: string) => void>;
+
+    /**
+     * This function returns an [event](https://developer.roblox.com/en-us/api-reference/datatype/RBXScriptSignal).Fires when a specified [KeyframeMarker](https://developer.roblox.com/en-us/api-reference/class/KeyframeMarker) ends in an `MoonTrack`.
+     */
+    GetMarkerEndedSignal(name: string): RBXScriptSignal<(value: string) => void>;
+
+    /**
+     * Get the bindings of an element.
+     */
+    GetSetting(name: string): Record<string, any>;
+
+    /**
+     * Set the binding for an element's value.
+     */
+    SetSetting(name: string, value: any): void;
+
+    /**
+     * Get the total time of the track.
+     * 
+     * @returns the time of the track.
+     */
+    GetTimeLength(): number;
+
+    /**
+     * Destroy the track, rendering it unusable and cleaning up connections.
+     */
+    Destroy(): void;
 }
